@@ -15,7 +15,9 @@ default_pass = os.path.dirname(__file__)
 st.title("サプーアプリ")
 st.caption("これはサプーのテストアプリです")
 
+st.text = "main_app.pyの参照先「" + default_pass + "」"
+
 # 画像(web画面上の画像URLをそのまま設定してもOK)
 # image = Image.open(default_pass + "\\Twitterアイコン.jpg")
-image = Image.open(r"https://raw.githubusercontent.com/yu-syan/test4/main/MyPython_test/streamlit/Twitter%E3%82%A2%E3%82%A4%E3%82%B3%E3%83%B3.jpg")
+image = Image.open(default_pass + "\\Twitterアイコン.jpg")
 st.image(image, width=200)
